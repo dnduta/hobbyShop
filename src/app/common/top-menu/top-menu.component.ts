@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, NgZone, OnInit } from '@angular/core';
+import * as jq from 'jquery';
 
 @Component({
   selector: 'app-top-menu',
@@ -7,7 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopMenuComponent implements OnInit {
 
-  constructor() { }
+  zone:NgZone;
+
+  constructor(_zone:NgZone) 
+  {
+    this.zone = _zone;
+  }
 
   ngOnInit(): void {
   }
@@ -68,5 +74,27 @@ export class TopMenuComponent implements OnInit {
   ];
 
   submenuSections:number = 4; // bootstrap columns
+
+  mobileMenuOpen:boolean = false;
+
+  toogleMobileMenu() : void
+  {
+    this.mobileMenuOpen = !this.mobileMenuOpen;
+
+    if(this.mobileMenuOpen)
+    {
+      this.zone.runOutsideAngular(() => {
+        jq('#navbar .dropdown-menu').css({'position': 'relative', 'display': 'contents', 'opacity' : 100, 'visibility': 'visible', 'text-align': 'center'});
+        jq('#navbar').slideDown("slow", "linear");
+      });
+    }
+    else
+    {
+      this.zone.runOutsideAngular(() => {
+        jq('#navbar').slideUp();
+        jq('#navbar .dropdown-menu').removeAttr('style');
+      });
+    }
+  }
 
 }
