@@ -23,24 +23,4 @@ export class SliderComponent implements OnInit {
     pauseOnFocus: false,
     pauseOnHover: false
   }
-
-  slickInit(e:any) {
-    console.log('slick initialized');
-    console.log(e);
-  }
-     
-  breakpoint(e:any) {
-    console.log('breakpoint');
-    console.log(e);
-  }
-     
-  afterChange(e:any) {
-    console.log('afterChange');
-    console.log(e);
-  }
-     
-  beforeChange(e:any) {
-    console.log('beforeChange');
-    console.log(e);
-  }
 }
