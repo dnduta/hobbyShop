@@ -13,6 +13,8 @@ import { SliderComponent } from './pages/home/slider/slider.component';
 import { HomeCategoryDisplayComponent } from './pages/home/home-category-display/home-category-display.component';
 import { HomeTopProductsComponent } from './pages/home/home-top-products/home-top-products.component';
 import { ShopComponent } from './pages/shop/shop.component';
+import { SortByComponent } from './pages/shop/widgets/sort-by/sort-by.component';
+import { CategoriesComponent } from './pages/shop/widgets/categories/categories.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { ShopComponent } from './pages/shop/shop.component';
     SliderComponent,
     HomeCategoryDisplayComponent,
     HomeTopProductsComponent,
-    ShopComponent
+    ShopComponent,
+    SortByComponent,
+    CategoriesComponent
   ],
   imports: [
     BrowserModule,
