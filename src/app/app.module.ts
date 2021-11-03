@@ -12,6 +12,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { SliderComponent } from './pages/home/slider/slider.component';
 import { HomeCategoryDisplayComponent } from './pages/home/home-category-display/home-category-display.component';
 import { HomeTopProductsComponent } from './pages/home/home-top-products/home-top-products.component';
+import { ShopComponent } from './pages/shop/shop.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { HomeTopProductsComponent } from './pages/home/home-top-products/home-to
     HomeComponent,
     SliderComponent,
     HomeCategoryDisplayComponent,
-    HomeTopProductsComponent
+    HomeTopProductsComponent,
+    ShopComponent
   ],
   imports: [
     BrowserModule,

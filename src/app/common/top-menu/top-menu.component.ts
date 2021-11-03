@@ -26,7 +26,7 @@ export class TopMenuComponent implements OnInit {
       children: []
     },
     {
-      link: '',
+      link: 'shop',
       linkText: 'Shop',
       title: 'Shop - PremiumCraft Furniture',
       children: [
