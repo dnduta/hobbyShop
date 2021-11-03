@@ -1293,10 +1293,15 @@ input[type="email"]:focus, input[type="password"]:focus, input[type="text"]:focu
   margin-bottom: 4px;
 }
 
+.product-category ul li span,
+.product-category ul li span label,
 .product-category ul li a {
   color: #666;
+  font-weight: inherit;
 }
 
+.product-category ul li span:hover,
+.product-category ul li span label:hover,
 .product-category ul li a:hover {
   color: #000;
 }
