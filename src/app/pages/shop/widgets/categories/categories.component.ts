@@ -12,4 +12,19 @@ export class CategoriesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  categories = [
+    {
+      name: "Office",
+      children: ["Office desks", "Drawers"]
+    },
+    {
+      name: "Smart Spaces",
+      children: ["Shoe racks", "Shelves", "Stands"]
+    },
+    {
+      name: "Home",
+      children: ["Coffee table", "Side tables", "Lamp stands"]
+    }
+  ];
+
 }

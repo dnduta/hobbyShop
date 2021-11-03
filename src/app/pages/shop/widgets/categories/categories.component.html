@@ -3,29 +3,31 @@
     <div class="panel-group commonAccordion" id="accordion" role="tablist" aria-multiselectable="true">
         <div class="panel panel-default">
 
-            <div class="panel-heading" role="tab" id="headingOne">
-                <h4 class="panel-title">
-                    <a role="button" data-toggle="collapse" data-parent="#accordion"
-                        aria-expanded="false" aria-controls="collapseOne">
-                        Shoes
-                </a>
-                </h4>
-            </div>
+            <section *ngFor="let group of categories; first as isFirst;index as ind">
 
-            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                <div class="panel-body">
-                    <ul>
-                        <li>
-                            <span>
-                                <input type="checkbox" name="" id="of"> &nbsp;
-                                <label for="of">Office Desks</label>
-                            </span>
-                        </li>
-                        <li><a href="#!">Shoe Color</a></li>
-                        <li><a href="#!">Shoe Color</a></li>
-                    </ul>
+                <div class="panel-heading" role="tab" id="heading{{ind}}">
+                    <h4 class="panel-title">
+                        <a [ngClass]="isFirst ? '' : 'collapsed'" id="accordion-link-{{ind}}" role="button" data-parent="#accordion">
+                            {{group.name}}
+                        </a>
+                    </h4>
                 </div>
-            </div>
+
+                <div id="collapse{{ind}}" [ngClass]="isFirst ? 'panel-collapse collapse in' : 'panel-collapse collapse'" role="tabpanel">
+                    <div class="panel-body">
+                        <ul>
+                            <li *ngFor="let cat of group.children">
+                                <span>
+                                    <input type="checkbox" name="" id="of"> &nbsp;
+                                    <label for="of">{{cat}}</label>
+                                </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </section>
+            
         </div>
 
     </div>
