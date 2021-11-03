@@ -5,7 +5,7 @@
 
             <section *ngFor="let group of categories; first as isFirst;index as ind">
 
-                <div class="panel-heading" role="tab" id="heading{{ind}}">
+                <div (click)="togglePanel(ind)" class="panel-heading" role="tab" id="heading{{ind}}">
                     <h4 class="panel-title">
                         <a [ngClass]="isFirst ? '' : 'collapsed'" id="accordion-link-{{ind}}" role="button" data-parent="#accordion">
                             {{group.name}}
