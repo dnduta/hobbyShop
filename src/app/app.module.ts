@@ -16,6 +16,8 @@ import { ShopComponent } from './pages/shop/shop.component';
 import { SortByComponent } from './pages/shop/widgets/sort-by/sort-by.component';
 import { CategoriesComponent } from './pages/shop/widgets/categories/categories.component';
 import { GridProductComponent } from './pages/shop/grid-product/grid-product.component';
+import { PaginationComponent } from './pages/shop/widgets/pagination/pagination.component';
+import { EnquiryFormComponent } from './pages/shop/widgets/enquiry-form/enquiry-form.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { GridProductComponent } from './pages/shop/grid-product/grid-product.com
     ShopComponent,
     SortByComponent,
     CategoriesComponent,
-    GridProductComponent
+    GridProductComponent,
+    PaginationComponent,
+    EnquiryFormComponent
   ],
   imports: [
     BrowserModule,

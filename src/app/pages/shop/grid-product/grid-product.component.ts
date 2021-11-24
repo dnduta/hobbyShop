@@ -14,4 +14,9 @@ export class GridProductComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  enquireAboutItem():void
+  {
+    // TODO: trigger modal open with RXJS
+  }
+
 }
