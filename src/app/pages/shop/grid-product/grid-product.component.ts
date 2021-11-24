@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-grid-product',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./grid-product.component.sass']
 })
 export class GridProductComponent implements OnInit {
+
+  @Input("item") item:any;
 
   constructor() { }
 

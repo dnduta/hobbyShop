@@ -2,27 +2,31 @@
     <div class="product-item">                            
         <div class="product-thumb">
             <span class="bage">Buy Now</span>
-            <img class="img-responsive" src="../../../assets/images/shop/products/product-1.jpg" alt="product-img" />
+            <img class="img-responsive" [src]="item.photo_url" alt="product-img" />
                         
             <div class="preview-meta">
                 <ul>
                     <li>
-                        <a [title]="'View xx Details'">
+                        <a [title]="'View ' + item.Name + ' Details'">
                             <i class="tf-ion-ios-search-strong"></i>
                         </a>
                     </li>
                     <li>
-                        <a [title]="'Enquire about xx'"><i class="tf-ion-ios-telephone"></i></a>
+                        <a [title]="'Enquire about ' + item.Name">
+                            <i class="tf-ion-ios-telephone"></i>
+                        </a>
                     </li>
                     <li>
-                        <a [title]="'Add xx to cart'"><i class="tf-ion-android-cart"></i></a>
+                        <a [title]="'Add ' + item.Name +' to cart'">
+                            <i class="tf-ion-android-cart"></i>
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="product-content">
-            <h4><a href="product-single.html">Reef Boardsport</a></h4>
-            <p class="price">$200</p>
+            <h4><a href="product-single.html">{{item.Name}}</a></h4>
+            <p class="price">KES. {{item.price}}</p>
         </div>
     </div>
 </div>
