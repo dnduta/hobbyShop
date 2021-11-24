@@ -26,7 +26,7 @@
             <div class="col-md-9">
                 <div class="row">
 
-                    <app-grid-product></app-grid-product>
+                    <app-grid-product *ngFor="let item of items" [item]="item"></app-grid-product>
 
                     <!-- Modal -->
                     <div class="modal product-modal fade" id="product-modal">

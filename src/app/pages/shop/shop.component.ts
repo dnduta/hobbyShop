@@ -12,4 +12,12 @@ export class ShopComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  items = [
+    {
+      Photo_url: "../../../assets/images/shop/products/product-1.jpg",
+      Name: "Office table",
+      Price: "10,000"
+    }
+  ];
+
 }
