@@ -15,6 +15,7 @@ import { HomeTopProductsComponent } from './pages/home/home-top-products/home-to
 import { ShopComponent } from './pages/shop/shop.component';
 import { SortByComponent } from './pages/shop/widgets/sort-by/sort-by.component';
 import { CategoriesComponent } from './pages/shop/widgets/categories/categories.component';
+import { GridProductComponent } from './pages/shop/grid-product/grid-product.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { CategoriesComponent } from './pages/shop/widgets/categories/categories.
     HomeTopProductsComponent,
     ShopComponent,
     SortByComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    GridProductComponent
   ],
   imports: [
     BrowserModule,
