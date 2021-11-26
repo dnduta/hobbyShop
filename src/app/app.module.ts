@@ -21,6 +21,7 @@ import { EnquiryFormComponent } from './pages/shop/widgets/enquiry-form/enquiry-
 import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
 import { ProductImageSliderComponent } from './pages/product-detail/product-image-slider/product-image-slider.component';
 import { ReviewsComponent } from './pages/product-detail/reviews/reviews.component';
+import { RelatedProductsComponent } from './pages/shop/related-products/related-products.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { ReviewsComponent } from './pages/product-detail/reviews/reviews.compone
     EnquiryFormComponent,
     ProductDetailComponent,
     ProductImageSliderComponent,
-    ReviewsComponent
+    ReviewsComponent,
+    RelatedProductsComponent
   ],
   imports: [
     BrowserModule,
