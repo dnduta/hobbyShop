@@ -20,6 +20,7 @@ import { PaginationComponent } from './pages/shop/widgets/pagination/pagination.
 import { EnquiryFormComponent } from './pages/shop/widgets/enquiry-form/enquiry-form.component';
 import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
 import { ProductImageSliderComponent } from './pages/product-detail/product-image-slider/product-image-slider.component';
+import { ReviewsComponent } from './pages/product-detail/reviews/reviews.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +40,8 @@ import { ProductImageSliderComponent } from './pages/product-detail/product-imag
     PaginationComponent,
     EnquiryFormComponent,
     ProductDetailComponent,
-    ProductImageSliderComponent
+    ProductImageSliderComponent,
+    ReviewsComponent
   ],
   imports: [
     BrowserModule,
