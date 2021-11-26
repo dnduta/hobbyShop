@@ -1,0 +1,65 @@
+<div class="single-product-slider">
+    <div id='carousel-custom' class='carousel slide' data-ride='carousel'>
+        <div class='carousel-outer'>
+            <!-- me art lab slider -->
+            <ngx-slick-carousel class='carousel-inner' [config]="slideConfig">
+                <div ngxSlickItem class='item' *ngFor="let image of productImages">
+                    <img [src]="image" alt='' />
+                </div>
+<!--                 
+                <div ngxSlickItem class='item'>
+                    <img src='../../../assets/images/shop/single-products/product-2.jpg' alt='' data-zoom-image="../../../assets/images/shop/single-products/product-2.jpg" />
+                </div>
+                
+                <div ngxSlickItem class='item'>
+                    <img src='../../../assets/images/shop/single-products/product-3.jpg' alt='' data-zoom-image="../../../assets/images/shop/single-products/product-3.jpg" />
+                </div>
+                <div ngxSlickItem class='item'>
+                    <img src='../../../assets/images/shop/single-products/product-4.jpg' alt='' data-zoom-image="../../../assets/images/shop/single-products/product-4.jpg" />
+                </div>
+                <div ngxSlickItem class='item'>
+                    <img src='../../../assets/images/shop/single-products/product-5.jpg' alt='' data-zoom-image="../../../assets/images/shop/single-products/product-5.jpg" />
+                </div>
+                <div ngxSlickItem class='item'>
+                    <img src='../../../assets/images/shop/single-products/product-6.jpg' alt='' data-zoom-image="../../../assets/images/shop/single-products/product-6.jpg" />
+                </div> -->
+                
+            </ngx-slick-carousel>
+            
+            <!-- sag sol -->
+            <!-- <a class='left carousel-control' href='#carousel-custom' data-slide='prev'>
+                <i class="tf-ion-ios-arrow-left"></i>
+            </a>
+            <a class='right carousel-control' href='#carousel-custom' data-slide='next'>
+                <i class="tf-ion-ios-arrow-right"></i>
+            </a> -->
+        </div>
+        
+        <!-- thumb -->
+        <ngx-slick-carousel [config]="slideConfig2" class='carousel-indicators mCustomScrollbar meartlab'>
+            <div ngxSlickItem class="carousel-indicators-item" *ngFor="let image of productImages">
+                <img [src]="image" alt='' />
+            </div>
+
+            <!-- <div ngxSlickItem class="carousel-indicators-item">
+                <img src='../../../assets/images/shop/single-products/product-2.jpg' alt='' />
+            </div>
+            <div ngxSlickItem class="carousel-indicators-item">
+                <img src='../../../assets/images/shop/single-products/product-3.jpg' alt='' />
+            </div>
+            <div ngxSlickItem class="carousel-indicators-item">
+                <img src='../../../assets/images/shop/single-products/product-4.jpg' alt='' />
+            </div>
+            <div ngxSlickItem class="carousel-indicators-item">
+                <img src='../../../assets/images/shop/single-products/product-5.jpg' alt='' />
+            </div>
+            <div ngxSlickItem class="carousel-indicators-item">
+                <img src='../../../assets/images/shop/single-products/product-6.jpg' alt='' />
+            </div>
+            <div ngxSlickItem class="carousel-indicators-item">
+                <img src='../../../assets/images/shop/single-products/product-7.jpg' alt='' />
+            </div> -->
+
+        </ngx-slick-carousel>
+    </div>
+</div>

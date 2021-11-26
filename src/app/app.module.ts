@@ -19,6 +19,7 @@ import { GridProductComponent } from './pages/shop/grid-product/grid-product.com
 import { PaginationComponent } from './pages/shop/widgets/pagination/pagination.component';
 import { EnquiryFormComponent } from './pages/shop/widgets/enquiry-form/enquiry-form.component';
 import { ProductDetailComponent } from './pages/product-detail/product-detail.component';
+import { ProductImageSliderComponent } from './pages/product-detail/product-image-slider/product-image-slider.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { ProductDetailComponent } from './pages/product-detail/product-detail.co
     GridProductComponent,
     PaginationComponent,
     EnquiryFormComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    ProductImageSliderComponent
   ],
   imports: [
     BrowserModule,
