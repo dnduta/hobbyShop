@@ -2,7 +2,10 @@
     <div id='carousel-custom' class='carousel slide' data-ride='carousel'>
         <div class='carousel-outer'>
             <!-- me art lab slider -->
-            <ngx-slick-carousel class='carousel-inner' [config]="slideConfig">
+            <ngx-slick-carousel 
+                #slickModal="slick-carousel" 
+                [config]="slideConfig"
+                class='carousel-inner'>
                 <div ngxSlickItem class='item' *ngFor="let image of productImages">
                     <img [src]="image" alt='' />
                 </div>
@@ -37,8 +40,8 @@
         
         <!-- thumb -->
         <ngx-slick-carousel [config]="slideConfig2" class='carousel-indicators mCustomScrollbar meartlab'>
-            <div ngxSlickItem class="carousel-indicators-item" *ngFor="let image of productImages">
-                <img [src]="image" alt='' />
+            <div ngxSlickItem class="carousel-indicators-item" *ngFor="let image of productImages; index as $i">
+                <img (click)="setSlide(slickModal, $i)" [src]="image" alt='' />
             </div>
 
             <!-- <div ngxSlickItem class="carousel-indicators-item">

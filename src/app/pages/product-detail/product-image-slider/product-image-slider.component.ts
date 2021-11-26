@@ -33,4 +33,9 @@ export class ProductImageSliderComponent implements OnInit {
     dots: true
   }
 
+  setSlide(slickModal:any, $i:number): void
+  {
+    slickModal.slickGoTo($i);
+  }
+
 }
