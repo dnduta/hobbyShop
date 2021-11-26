@@ -22,6 +22,7 @@ import { ProductDetailComponent } from './pages/product-detail/product-detail.co
 import { ProductImageSliderComponent } from './pages/product-detail/product-image-slider/product-image-slider.component';
 import { ReviewsComponent } from './pages/product-detail/reviews/reviews.component';
 import { RelatedProductsComponent } from './pages/shop/related-products/related-products.component';
+import { BuyOptionsComponent } from './pages/shop/widgets/buy-options/buy-options.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { RelatedProductsComponent } from './pages/shop/related-products/related-
     ProductDetailComponent,
     ProductImageSliderComponent,
     ReviewsComponent,
-    RelatedProductsComponent
+    RelatedProductsComponent,
+    BuyOptionsComponent
   ],
   imports: [
     BrowserModule,
