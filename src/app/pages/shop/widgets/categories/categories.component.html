@@ -13,7 +13,7 @@
                     </h4>
                 </div>
 
-                <div id="collapse{{ind}}" [ngClass]="isFirst ? 'panel-collapse collapse in' : 'panel-collapse collapse'" role="tabpanel">
+                <div id="collapse{{ind}}" [class]="isFirst ? 'panel-collapse collapse in' : 'panel-collapse collapse'" role="tabpanel">
                     <div class="panel-body">
                         <ul>
                             <li *ngFor="let cat of group.children">
