@@ -24,6 +24,7 @@ import { ReviewsComponent } from './pages/product-detail/reviews/reviews.compone
 import { RelatedProductsComponent } from './pages/shop/related-products/related-products.component';
 import { BuyOptionsComponent } from './pages/shop/widgets/buy-options/buy-options.component';
 import { AboutComponent } from './pages/about/about.component';
+import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { AboutComponent } from './pages/about/about.component';
     ReviewsComponent,
     RelatedProductsComponent,
     BuyOptionsComponent,
-    AboutComponent
+    AboutComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
