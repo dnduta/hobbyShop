@@ -6,9 +6,10 @@
 			</div>
 		</div>
 		<div class="row">
-            <!-- Related product -->
-            <app-grid-product *ngFor="let item of items" [item]="item"></app-grid-product>
-			
+			<div class="col-md-3" *ngFor="let item of items">
+				<!-- Related product -->
+				<app-grid-product [item]="item"></app-grid-product>
+			</div>
 		</div>
 	</div>
 </section>
