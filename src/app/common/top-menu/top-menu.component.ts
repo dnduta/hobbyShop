@@ -60,21 +60,21 @@ export class TopMenuComponent implements OnInit {
       ]
     },
     {
-      link: '',
+      link: 'about-us',
       linkText: 'About Us',
-      title: 'About Us - PremiumCraft Furniture',
+      title: 'About Us | PremiumCraft Furniture',
       children: []
     },
     {
       link: '',
       linkText: 'Get a Quote',
-      title: 'Quote - PremiumCraft Furniture',
+      title: 'Quote | PremiumCraft Furniture',
       children: []
     },
     {
       link: '',
       linkText: 'Find Us',
-      title: 'Find - PremiumCraft Furniture',
+      title: 'Find | PremiumCraft Furniture',
       children: []
     }
   ];
