@@ -7,7 +7,7 @@
 
                 <div (click)="togglePanel(ind)" class="panel-heading" role="tab" id="heading{{ind}}">
                     <h4 class="panel-title">
-                        <a [ngClass]="isFirst ? '' : 'collapsed'" id="accordion-link-{{ind}}" role="button" data-parent="#accordion">
+                        <a [class]="isFirst ? '' : 'collapsed'" id="accordion-link-{{ind}}" role="button" data-parent="#accordion">
                             {{group.name}}
                         </a>
                     </h4>
